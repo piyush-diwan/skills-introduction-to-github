@@ -1,0 +1,540 @@
+/* Default styles */
+#nav1 {
+    margin: 0 40px 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 96vw;
+    flex-wrap: wrap; /* Allow wrapping of items */
+}
+
+#nav1 .firstdiv {
+    display: flex;
+    align-items: center;
+    width: 25%;
+    min-width: 250px; /* Ensure the search bar has enough space */
+}
+
+#nav1 .firstdiv img {
+    width: 40px;
+    border: 0px solid black;
+    border-radius: 50%;
+}
+
+#nav1 .firstdiv form {
+    height: 46px;
+    width: 100%;
+    margin-right: -8px;
+    max-width: 100%; /* Responsive form width */
+}
+
+#nav1 .firstdiv i {
+    font-size: 21px;
+    border: 1px solid rgb(231, 215, 215);
+    padding: 6px 6px;
+    border-radius: 10%;
+    border-left: none;
+}
+
+#nav1 .seconddiv {
+    flex: 1; /* Allow the logo to take remaining space */
+    text-align: center; /* Center the logo */
+}
+
+#nav1 .thirddiv {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align items to the right */
+    width: 25%;
+    min-width: 150px; /* Ensure the "Pay Now" button has enough space */
+}
+
+
+.navbar {
+    text-align: center;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+/* Hide default checkbox */
+.nav-item input {
+    display: none;
+}
+
+/* Style dropdown toggle */
+.nav-item label {
+    cursor: pointer;
+    padding: 10px 15px;
+    display: block;
+    font-weight: 900px;
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: 350px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 5px 0;
+    transition: opacity 0.3s ease-in-out, transform 0.2s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Show dropdown on hover */
+.nav-item:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+/* Show dropdown on click (when checkbox is checked) */
+.nav-item input:checked ~ .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+/* Dropdown menu items */
+.dropdown-menu a {
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-menu a:hover {
+    background-color: rgb(255, 230, 0);
+}
+
+
+.nav-link {
+    margin: 10px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.category {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 160px;
+    flex-wrap: wrap;
+}
+.category img {
+    border: 1px solid black;
+    border-radius: 50%;
+    max-width: 100%;
+}
+.category .categorydiv div{
+    font-size: 35px;
+}
+.category .categorydiv div:last-child{
+    font-size: 15px;
+}
+
+.top-header {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    text-decoration: underline;
+    margin: 40px 0;
+}
+
+.heaven, .latest, .modern, .client {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 120px;
+    flex-wrap: wrap;
+}
+
+.heaven .card-body, .latest .card-body {
+    text-align: center;
+}
+.heaven .btn, .latest .btn {
+    border: 1px solid black;
+}
+.heaven img {
+    height: 14rem;
+    max-width: 100%;
+}
+.latest img {
+    height: 10rem;
+    max-width: 100%;
+}
+
+.modern{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.modern div {
+    width: 250px;
+    max-width: 100%;
+    margin-right: 10px;
+}
+.modern div img{
+    width: 250px;
+}
+
+.testim{
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: underline; 
+    text-align: center;
+}
+.client .card {
+    width: 27pc;
+    border: 2px solid black;
+    border-radius: 15px;
+    max-width: 100%;
+}
+.client .card .card-body img {
+    width: 110px;
+    max-width: 100%;
+}
+
+.client .client-bottom {
+    display: flex;
+    flex-wrap: wrap;
+}
+.client .client-bottom div:last-child{
+    width: 47px;
+    opacity: 0.7;
+    margin-left: 160px;
+}
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    justify-content: space-between;
+}
+.footer ul {
+    list-style-type: none;
+}
+.footer li {
+    font-size: 20px;
+    margin-left: 40px;
+}
+.footer .card4 {
+    width: 24%;
+    margin-right: 190px;
+}
+.footer .card4 li {
+    margin-bottom: 28px;
+}
+
+/* Responsive Image Zoom */
+.image-wrapper {
+    overflow: hidden;
+}
+.image-wrapper img {
+    object-fit: cover;
+    transition: transform 0.2s ease-in-out;
+    max-width: 100%;
+}
+.image-wrapper:hover img {
+    transform: scale(1.2);
+}
+
+/* Responsive Dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown input {
+    display: none;
+}
+.dropdown label {
+    font-size: 35px;
+    cursor: pointer;
+}
+.dropdown-content {
+    position: absolute;
+    background-color: white;
+    min-width: 120px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 5px 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, transform 0.2s ease-in-out;
+    transform: translateY(10px);
+    z-index: 1;
+}
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+.dropdown input:checked ~ .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+/* ✅ Media Queries for Responsive Design */
+
+/* Tablets and Small Screens */
+@media (max-width: 1024px) {
+    #nav1 {
+        margin: 0 20px;
+    }
+
+    #nav1 .firstdiv {
+        width: 100%; /* Full width for the search bar */
+        order: 1; /* Move the search bar to the top */
+        margin-bottom: 10px; /* Add spacing below the search bar */
+    }
+
+    #nav1 .seconddiv {
+        width: 100%; /* Full width for the logo */
+        order: 2; /* Move the logo to the second line */
+        margin-bottom: 10px; /* Add spacing below the logo */
+    }
+
+    #nav1 .thirddiv {
+        width: 100%; /* Full width for the third div */
+        order: 3; /* Move the third div to the third line */
+        justify-content: space-between; /* Space out the items */
+    }
+    .top-header {
+        text-align: center;
+        font-size: 40px;
+        font-weight: 500;
+        text-decoration: underline;
+        margin: 50px 0;
+    }
+    /* #nav1 .firstdiv form{
+        width: 10pc;
+    } */
+    /* .category, .heaven, .latest, .modern, .client {
+        margin: 0 50px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer .card4 {
+        width: 90%;
+        margin: 0 auto;
+    } */
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    #nav1 {
+        margin: 0 10px;
+    }
+
+    #nav1 .firstdiv {
+        min-width: 100%; /* Full width for the search bar */
+    }
+
+    #nav1 .firstdiv form {
+        width: 100%; /* Full width for the search input */
+    }
+
+    #nav1 .seconddiv img {
+        width: 180px; /* Smaller logo for mobile */
+    }
+
+    #nav1 .thirddiv {
+        flex-direction: row; /* Keep items in a row */
+        justify-content: space-between; /* Space out the items */
+    }
+    .heaven, .latest, .modern, .client {
+        flex-wrap: nowrap; /* Prevent wrapping to allow horizontal scrolling */
+        overflow-x: auto; /* Enable horizontal scrolling */
+        margin: 0 20px; /* Adjust margin for smaller screens */
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on touch devices */
+    }
+
+    /* Adjust card sizes for smaller screens */
+    .heaven .card, .latest .card, .client .card {
+        width: 18rem; /* Decrease card width for smaller screens */
+        flex: 0 0 auto; /* Prevent flex items from shrinking */
+        margin-right: 20px; /* Add spacing between cards */
+    }
+
+    /* Adjust image sizes for smaller screens */
+    .heaven img {
+        height: 10rem; /* Decrease image height */
+    }
+
+    .latest img {
+        height: 8rem; /* Decrease image height */
+    }
+
+    .modern div {
+        width: 200px;
+        max-width: 100%;
+        margin-right: 30px;
+    }
+    .modern div img{
+        width: 199px;
+    }
+    .testim{
+        margin-top: 10px;
+        font-size: 10px;
+        font-weight: 500;
+    }
+    .client .card {
+        width: 22rem; /* Adjust card width for testimonials */
+    }
+    .client .client-bottom div:last-child{
+        width: 40px;
+        opacity: 0.7;
+        margin-left: 100px;
+    }
+    .footer li {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    .dropdown label {
+        font-size: 28px;
+    }
+    .dropdown-content {
+        min-width: 100px;
+    }
+    .top-header {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 500;
+        text-decoration: underline;
+        margin: 60px 0;
+    }
+    .category {
+        flex-wrap: nowrap; /* Prevent wrapping to allow horizontal scrolling */
+        overflow-x: auto; /* Enable horizontal scrolling */
+        margin: 30px 20px; /* Adjust margin for smaller screens */
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on touch devices */
+    }
+    .category .categorydiv{
+        height: 280px;
+        width: 180px;
+        margin: 0 22px;
+    }
+    .category .categorydiv div{
+        font-size: 25px;
+    }
+    .category .categorydiv div:last-child{
+        font-size: 15px;
+    }
+
+    .image-wrapper {
+        flex: 0 0 auto; /* Prevent flex items from shrinking */
+        margin-right: 20px; /* Add some spacing between items */
+    }
+    .image-wrapper {
+        overflow: hidden;
+    }
+    .image-wrapper img {
+        object-fit: cover;
+        transition: transform 0.2s ease-in-out;
+        max-width: 100%;
+    }
+    .image-wrapper:hover img {
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 480px){
+    .top-header {
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+        text-decoration: underline;
+        margin: 55px 0 30px;
+    }
+    .category .categorydiv{
+        height: 190px;
+        width: 140px;
+        margin: 0 15px;
+    }
+    .category .categorydiv div{
+        font-size: 15px;
+    }
+    .category .categorydiv div:last-child{
+        font-size: 9px;
+    }
+    .heaven, .latest, .modern, .client {
+        margin: 0 10px; /* Further reduce margin */
+    }
+
+    /* Further decrease card sizes */
+    .heaven .card, .latest .card, .client .card {
+        width: 14rem; /* Smaller card width for very small screens */
+    }
+
+    /* Further decrease image sizes */
+    .heaven img {
+        height: 8rem; /* Smaller image height */
+    }
+
+    .latest img {
+        height: 6rem; /* Smaller image height */
+    }
+
+    .modern div {
+        width: 150px;
+        max-width: 100%;
+        margin-right: 20px;
+    }
+    .modern div img{
+        width: 150px;
+    }
+
+    .client .card {
+        width: 18rem; /* Smaller card width for testimonials */
+    }
+    .client .client-bottom div:last-child{
+        width: 35px;
+        opacity: 0.7;
+        margin-left: 40px;
+    }
+}
+
+
+
+/* Second Page Code */
+#pagesecond{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#pagesecond .categ{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    width: 40%;
+    margin-right: 10%;
+    margin-left: 40px;
+}
+#pagesecond .card{
+    width: 28pc;
+}
+#pagesecond .categ div{
+    margin: 60px 0;
+}
+#pagesecond .categ ul{
+    margin: 20px 0;
+}

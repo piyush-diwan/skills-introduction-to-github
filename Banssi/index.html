@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" id="nav1">
+        <div class="container-fluid">
+            <div class="firstdiv">
+                <img src="assets/bansidp.jpg" alt="">
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search for Fabric Name">
+                </form>
+                <i class="bi bi-search"></i>
+            </div>
+            <div class="seconddiv">
+                <img src="assets/bansilogo.jpg" style="width: 240px" alt="">
+            </div>
+            <div class="thirddiv">
+                <div class="dropdown">
+                    <input type="checkbox" id="dropdown-toggle">
+                    <label for="dropdown-toggle"><i class="bi bi-person"></i></label>
+                    <div class="dropdown-content">
+                      <a href="#">Login</a>
+                      <a href="#">Register</a>
+                      <a href="#">Admin</a>
+                    </div>
+                </div>
+                <div> <button type="button" class="btn btn-dark" style="border: 1px solid black; border-radius: 14px;"> Pay Now </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+          <!-- Toggle Button for Mobile -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <!-- Collapsible Content -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                      <input type="checkbox" id="dropdown1">
+                      <label for="dropdown1" style="font-size: 20px;">CUSTOM SUIT FABRIC</label>
+                      <ul class="dropdown-menu">
+                          <li><a href="page.html">MENS</a></li>
+                          <li><a href="#">WOMENS</a></li>
+                          <li><a href="#">SHOPPING</a></li>
+                          <li><a href="#">FABRIC</a></li>
+                      </ul>
+                  </li>
+  
+                  <li class="nav-item dropdown">
+                      <input type="checkbox" id="dropdown2">
+                      <label for="dropdown2" style="font-size: 20px;">ASTAR LINING FABRIC</label>
+                      <ul class="dropdown-menu">
+                          <li><a href="#">MENS</a></li>
+                          <li><a href="#">WOMENS</a></li>
+                          <li><a href="#">SHOPPING</a></li>
+                          <li><a href="#">FABRIC</a></li>
+                      </ul>
+                  </li>
+  
+                  <li class="nav-item dropdown">
+                      <input type="checkbox" id="dropdown3">
+                      <label for="dropdown3" style="font-size: 20px;">DESIGNERS FABRIC</label>
+                      <ul class="dropdown-menu">
+                          <li><a href="#">MENS</a></li>
+                          <li><a href="#">WOMENS</a></li>
+                          <li><a href="#">SHOPPING</a></li>
+                          <li><a href="#">FABRIC</a></li>
+                      </ul>
+                  </li>
+  
+                  <li class="nav-item dropdown">
+                      <input type="checkbox" id="dropdown4">
+                      <label for="dropdown4" style="font-size: 20px;">MEN'S ACCESSORIES</label>
+                      <ul class="dropdown-menu">
+                          <li><a href="#">MENS</a></li>
+                          <li><a href="#">WOMENS</a></li>
+                          <li><a href="#">SHOPPING</a></li>
+                          <li><a href="#">FABRIC</a></li>
+                      </ul>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+    <section class="container mt-4">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active image-wrapper">
+                    <img src="./assets/car1.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item image-wrapper">
+                    <img src="./assets/car-2.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item image-wrapper">
+                    <img src="./assets/car-3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <div class="top-header"> SHOPS BY CATEGORIES </div>
+    <section class="category">
+        <div style="display: flex; flex-direction: column; align-items: center;" class="image-wrapper categorydiv">
+            <img src="assets/custom.png" alt="">
+            <div> CUSTOM </div>
+            <div> SUIT FABRIC </div>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center;"  class="image-wrapper categorydiv">
+            <img src="assets/person.jpeg" alt="">
+            <div> PERSONALIZED </div>
+            <div> LINING FABRIC </div>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center;" class="image-wrapper categorydiv">
+            <img src="assets/fancy.jpeg" alt="">
+            <div> FANCY </div>
+            <div> LINING FABRIC </div>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center;" class="image-wrapper categorydiv">
+            <img src="assets/men.png" alt="">
+            <div> MEN</div>
+            <div> ACCESORIES </div>
+        </div>
+    </section>
+
+    <div class="top-header"> YOUR ONE STOP FABRIC HEAVEN </div>
+    <section class="heaven">
+        <div class="card" style="width: 23rem;">
+            <div class="image-wrapper">
+            <img src="assets/fabrics.jpeg" class="card-img-top" alt="..."></div>
+            <div class="card-body">
+              <h5 class="card-title"> FABRICS</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-light">VIEW ALL FABRICS</a>
+            </div>
+          </div>
+          <div class="card" style="width: 23rem;">
+            <div class="image-wrapper">
+            <img src="assets/coat.jpeg" class="card-img-top" alt="..."> </div>
+            <div class="card-body">
+              <h5 class="card-title">READY TO WEAR</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-light">VIEW READY TO WEAR</a>
+            </div>
+          </div>
+          <div class="card" style="width: 23rem;">
+            <div class="image-wrapper">
+            <img src="assets/mens.jpeg" class="card-img-top" alt="..."></div>
+            <div class="card-body">
+              <h5 class="card-title">MEN ACCESORIES</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-light">VIEW MEN ACCESORIES</a>
+            </div>
+          </div>
+    </section>
+    <div class="top-header"> OUR LATEST COLLECTIONS </div>
+    <section class="latest">
+        <div class="card" style="width: 19rem;">
+            <div class="image-wrapper">
+            <img src="assets/fab1.jpeg" class="card-img-top" alt="..."></div>
+            <div class="card-body">
+              <h6 class="card-title" style="letter-spacing: 3px;"> Personalized Name  <br> Woven Fabric </h6>
+              <a href="#" class="btn btn-light">VIEW ALL DETAILS </a>
+            </div>
+          </div>
+        <div class="card" style="width: 19rem;">
+            <div class="image-wrapper">
+            <img src="assets/fab2.jpeg" class="card-img-top" alt="..."></div>
+            <div class="card-body">
+              <h6 class="card-title" style="letter-spacing: 3px;"> Personalized Name  <br> Woven Fabric </h6>
+              <a href="#" class="btn btn-light">VIEW ALL DETAILS </a>
+            </div>
+          </div>
+        <div class="card" style="width: 19rem;">
+            <div class="image-wrapper">
+            <img src="assets/fab3.jpeg" class="card-img-top" alt="..."></div>
+            <div class="card-body">
+              <h6 class="card-title" style="letter-spacing: 3px;"> Personalized Name  <br> Woven Fabric </h6>
+              <a href="#" class="btn btn-light">VIEW ALL DETAILS </a>
+            </div>
+          </div>
+        <div class="card" style="width: 19rem;">
+            <div class="image-wrapper">
+            <img src="assets/fab4.jpeg" class="card-img-top" alt="..."></div>
+            <div class="card-body">
+              <h6 class="card-title" style="letter-spacing: 3px;"> Personalized Name  <br> Woven Fabric </h6>
+              <a href="#" class="btn btn-light">VIEW ALL DETAILS </a>
+            </div>
+          </div>
+          
+    </section>
+    <div class="top-header"> BEST SELLERS </div>
+    <section class="latest">
+        <div class="card" style="width: 19rem;">
+            <div class="image-wrapper">
+            <img src="assets/fab1.jpeg" class="card-img-top" alt="..."></div>
+            <div class="card-body">
+              <h6 class="card-title" style="letter-spacing: 3px;"> Personalized Name  <br> Woven Fabric </h6>
+              <a href="#" class="btn btn-light">VIEW ALL DETAILS </a>
+            </div>
+          </div>
+        <div class="card" style="width: 19rem;">
+            <div class="image-wrapper">
+            <img src="assets/fab2.jpeg" class="card-img-top" alt="..."></div>
+            <div class="card-body">
+              <h6 class="card-title" style="letter-spacing: 3px;"> Personalized Name  <br> Woven Fabric </h6>
+              <a href="#" class="btn btn-light">VIEW ALL DETAILS </a>
+            </div>
+          </div>
+        <div class="card" style="width: 19rem;">
+            <div class="image-wrapper">
+            <img src="assets/fab3.jpeg" class="card-img-top" alt="..."></div>
+            <div class="card-body">
+              <h6 class="card-title" style="letter-spacing: 3px;"> Personalized Name  <br> Woven Fabric </h6>
+              <a href="#" class="btn btn-light">VIEW ALL DETAILS </a>
+            </div>
+          </div>
+        <div class="card" style="width: 19rem;">
+            <div class="image-wrapper">
+            <img src="assets/fab4.jpeg" class="card-img-top" alt="..."></div>
+            <div class="card-body">
+              <h6 class="card-title" style="letter-spacing: 3px;"> Personalized Name  <br> Woven Fabric </h6>
+              <a href="#" class="btn btn-light">VIEW ALL DETAILS </a>
+            </div>
+          </div>
+    </section>
+
+    <div class="top-header">
+        BRANDS FOR MODERN, DESCERNING MAN
+    </div>
+    
+      <div class="modern">
+          <div><img src="assets/dropbox.png" alt=""></div>
+          <div><img src="assets/airtable.png" alt=""></div>
+          <div><img src="assets/razor.png" alt=""></div>
+          <div><img src="assets/cont.png" alt=""></div>
+          <div><img src="assets/culture.png" alt=""></div>
+      </div>
+
+    <div class="testim"> TESTIMONIALS </div>
+    <div class="top-header" style="text-decoration: none; margin-top: 4px;">
+        Our Latest Client Feedback
+    </div>
+      <div class="client">
+          <div class="card">
+              <div class="card-body">
+                  <div><img src="assets/5 stars.jpeg" alt=""></div>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <div class="client-bottom">
+                      <div><img src="assets/person1.jpeg" alt="" style="width:50px;height: 45px;margin-right: 20px; border-radius: 50%;"></div>
+                      <div> Priya Mehata</div>
+                      <div> <img src="assets/comma.png" alt=""> </div>
+                  </div>
+              </div>
+          </div>
+          <div class="card">
+              <div class="card-body">
+                  <div><img src="assets/5 stars.jpeg" alt=""></div>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <div class="client-bottom">
+                      <div><img src="assets/person1.jpeg" alt="" style="width:50px;height: 45px;margin-right: 20px; border-radius: 50%;"></div>
+                      <div> Priya Mehata</div>
+                      <div> <img src="assets/comma.png" alt=""> </div>
+                  </div>
+              </div>
+          </div>
+          <div class="card">
+              <div class="card-body">
+                  <div><img src="assets/5 stars.jpeg" alt=""></div>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <div class="client-bottom">
+                      <div><img src="assets/person1.jpeg" alt="" style="width:50px;height: 45px;margin-right: 20px; border-radius: 50%;"></div>
+                      <div> Priya Mehata</div>
+                      <div> <img src="assets/comma.png" alt=""> </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+    <section class="footer">
+        <div class="card1">
+            <ul>
+                <li style="margin-left: 0px;"> <img src="assets/tantu1.png" alt="" width="200px"></li>
+                <li>  tantuvardan is not</li>
+                <li>  The Manufacturing </li>
+                <li>  of Silks and Silk</li>
+                <li>   Blends, Cottons</li>
+                <li>  Viscose, Velvets</li>
+                <li>  Sustainaible Fabrics</li>
+                <li>  And More</li>
+            </ul>
+        </div>
+        <div class="card2">
+            <ul>
+                <li>  Discover </li>
+                <li>  Our Story </li>
+                <li>  FAQ's </li>
+                <li> Wash Care Instuctions </li>
+                <li>  Wholesale & Bulk Order </li>
+                <li> Contact Us </li>
+            </ul>
+        </div>
+        <div class="card3">
+            <ul>
+                <li>  Information </li>
+                <li>  Terms & Conditions </li>
+                <li>  Privacy Policy </li>
+                <li>  Return/ Exchange </li>
+                <li>  Refund Policy </li>
+                <li> Shipping Policy </li>
+                <li>  Gift Cards </li>
+                <li>  Terms of Service </li>
+                <li>  Refund Policy </li>
+            </ul>
+        </div>
+        <div class="card4">
+            <ul>
+                <li> SIGN UP AND SAVE </li>
+                <li> Subscribe to get special offers , new products etc.  We will not spam you! </li>
+                <li> Enter Your Email </li>
+                <hr style="margin-left: 40px; border: 2px solid black;">
+            </ul>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="./main.js"></script> -->
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+body{
+    margin: 10px 20px;
+}
+
+.toppagetext{
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.toptext{
+    font-size: 30px;
+    font-weight: 600;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bottombold{
+    font-size: 26px;
+    font-weight: 500;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bottomtext{
+    font-size: 21px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.m40{
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.m30{
+    margin-top: 30px;
+}
+
+.m20{
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
+.bold{
+    font-weight: 500;
+}
+
+.bold-numbers ::marker {
+    font-weight: 500;
+}
